@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>RAZOR VIEWS DEMO</h2>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/Site.css")"
+          rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/jquery-1.4.4.min.js")"
+            type="text/javascript"></script>
+</head>
+<body>
+
+
+    <table border="1">
+        <tr>
+            <th width="1000px"><h1>Name</h1></th>
+            <td width="1000px"><h1>Value</h1></td>
+        </tr>
+        <tr>
+            <td><h2>Day</h2></td>
+            <td><h2>@DateTime.Now.Day</h2></td>
+        </tr>
+        <tr>
+            <td><h2>Hour</h2></td>
+            <td><h2>@DateTime.Now.Hour</h2></td>
+        </tr>
+        <tr>
+            <td><h2>Minute</h2></td>
+            <td><h2>@DateTime.Now.Minute</h2></td>
+        </tr>
+        <tr>
+            <td><h2>Second</h2></td>
+            <td><h2>@DateTime.Now.Second</h2></td>
+        </tr>
+        </td>
+        <h1>This gives us the current day, hour, minutess and seconds</h1>
+    </table>
+
+</body>
+</html>
